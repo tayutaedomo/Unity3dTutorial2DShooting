@@ -1030,11 +1030,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4519055325673538, guid: 4c05521d974044ca08b09dc3f43346e8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.6432247
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4519055325673538, guid: 4c05521d974044ca08b09dc3f43346e8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.6226959
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4519055325673538, guid: 4c05521d974044ca08b09dc3f43346e8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1060,6 +1060,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212282004263992816, guid: 4c05521d974044ca08b09dc3f43346e8,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 979189183
+      objectReference: {fileID: 0}
+    - target: {fileID: 212282004263992816, guid: 4c05521d974044ca08b09dc3f43346e8,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c05521d974044ca08b09dc3f43346e8, type: 2}
   m_IsPrefabParent: 0
@@ -1079,6 +1089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6810471b2b26a437f9f78667ebe7509b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  bullet: {fileID: 1223309964469460, guid: 526710811a78e4942878008fc2bf2da1, type: 2}
 --- !u!50 &1991029653
 Rigidbody2D:
   serializedVersion: 4
