@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4808246525431768}
   - component: {fileID: 50469789808010168}
   - component: {fileID: 114857774198838870}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4233417099621428}
   - component: {fileID: 212943617289040618}
-  m_Layer: 0
+  - component: {fileID: 60514978496037110}
+  m_Layer: 10
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +54,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4236447457792794}
   - component: {fileID: 212142503121728950}
-  m_Layer: 0
+  - component: {fileID: 60597104291314412}
+  m_Layer: 10
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,6 +123,70 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &60514978496037110
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1420911673420860}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.016202673, y: 0.16}
+      - {x: -0.04272656, y: 0.099999994}
+      - {x: -0.049464688, y: 0.041070674}
+      - {x: -0.019571707, y: -0.156631}
+      - {x: 0.016202703, y: -0.15326196}
+      - {x: 0.06294067, y: 0.057701655}
+      - {x: 0.04272659, y: 0.1132619}
+      - {x: 0.026309803, y: 0.16}
+--- !u!60 &60597104291314412
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1856030084921508}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.016202673, y: 0.16}
+      - {x: -0.04272656, y: 0.099999994}
+      - {x: -0.049464688, y: 0.041070674}
+      - {x: -0.019571707, y: -0.156631}
+      - {x: 0.016202703, y: -0.15326196}
+      - {x: 0.06294067, y: 0.057701655}
+      - {x: 0.04272659, y: 0.1132619}
+      - {x: 0.026309803, y: 0.16}
 --- !u!114 &114857774198838870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,6 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  lifeTime: 1
 --- !u!212 &212142503121728950
 SpriteRenderer:
   m_ObjectHideFlags: 1

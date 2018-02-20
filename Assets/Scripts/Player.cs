@@ -23,10 +23,24 @@ public class Player : MonoBehaviour {
 	void Update () {
 		float x = Input.GetAxisRaw ("Horizontal");
 		float y = Input.GetAxisRaw ("Vertical");
-		Debug.Log ("x:y, " + x + " " + y);
+//		Debug.Log ("x:y, " + x + " " + y);
 
 		Vector2 direction = new Vector2 (x, y).normalized;
 //		GetComponent<Rigidbody2D> ().velocity = direction * speed;
 		spaceship.Move (direction);
+	}
+
+	void OnTriggerEnter2D (Collider2D c) {
+		string layerName = LayerMask.LayerToName (c.gameObject.layer);
+
+		if (layerName == "Bullet (Enemy)") {
+			Destroy (c.gameObject);
+		}
+
+		if (layerName == "Bullet (Enemy)" || layerName == "Enemy") {
+			spaceship.Explosion ();
+
+			Destroy (gameObject);
+		}
 	}
 }
